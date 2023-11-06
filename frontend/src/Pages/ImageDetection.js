@@ -12,11 +12,11 @@ const ImageDetection = () => {
       const image = await resizeImageAndConvertToBase64();
       setImgs(image);
       const response = await axios.post(
-        "https://detect.roboflow.com/capstone-c-final-dataset-1-vgfa5/3", //https://detect.roboflow.com/capstone-dataset_1/1
+        "https://detect.roboflow.com/model-train/1", //https://detect.roboflow.com/capstone-dataset_1/1
         image,
         {
           params: {
-            api_key: "wnFftijFrA5QQycgyNb3", //8DUruQpyJZQnMrHFqa3n
+            api_key: "mReUFEZsluUHMk7lX3B9", //8DUruQpyJZQnMrHFqa3n
           },
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -170,7 +170,7 @@ const ImageDetection = () => {
                               : "text-red-400"
                           } `}
                         >
-                          {(objects.confidence.toFixed(2) / 1) * 100}%
+                          {(objects.confidence * 100).toFixed().toString() + "%"}
                         </span>
                       </div>
                     </div>

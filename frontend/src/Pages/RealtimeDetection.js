@@ -1,9 +1,9 @@
 import { useRef, useEffect, useState } from "react";
 import Webcam from "react-webcam";
 
-const PUBLISHABLE_ROBOFLOW_API_KEY = "rf_7xdrVJjmZZgcvqzqFZEEHHnqRV03";
-const MODEL_NAME = "capstone-c-final-dataset-1-vgfa5";
-const MODEL_VERSION = 3;
+const PUBLISHABLE_ROBOFLOW_API_KEY = "rf_rSuXD1j22XoTYICgp1OY";
+const MODEL_NAME = "model-train";
+const MODEL_VERSION = 1;
 
 const Roboflow = (props) => {
   const webcamRef = useRef(null);

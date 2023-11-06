@@ -20,7 +20,7 @@ const Navbar = () => {
           to="/videodetection"
           className=" border-b-2 border-white hover:border-gray-600 mr-5 p-2 hover:bg-slate-100 hover:text-gray-600 font-semibold text-gray-500"
         >
-          <li>Vide Detection</li>
+          <li>Video Detection</li>
         </Link>
         <Link
           to="/realtimedetection"
